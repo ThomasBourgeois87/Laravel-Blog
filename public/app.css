@@ -1,0 +1,10 @@
+body {
+    max-width: 600px;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+article + article {
+    border-top: solid 2px grey;
+    margin-top: 4rem;
+}
