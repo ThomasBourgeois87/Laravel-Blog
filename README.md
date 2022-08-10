@@ -5,7 +5,7 @@ Tutorial link: [Laracast](https://laracasts.com/series/laravel-8-from-scratch)
 
 Devided into 11 sections :
 * ~~The Basics~~ - Finished
-* Blade
+* ~~Blade~~ - Finished
 * Working With Databases
 * Integrate the Design
 * Search
