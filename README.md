@@ -1,12 +1,12 @@
 # Laravel Laracast tutorial
-## Learning Laravel with buiding a simple blog
+## Learning Laravel with building a simple blog
 
 Tutorial link: [Laracast](https://laracasts.com/series/laravel-8-from-scratch)
 
 Devided into 11 sections :
 * ~~The Basics~~ - Finished
 * ~~Blade~~ - Finished
-* Working With Databases
+* ~~Working With Databases~~ - Finished
 * Integrate the Design
 * Search
 * Filtering
