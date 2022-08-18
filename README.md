@@ -7,8 +7,8 @@ Devided into 11 sections :
 * ~~The Basics~~ - Finished
 * ~~Blade~~ - Finished
 * ~~Working With Databases~~ - Finished
-* Integrate the Design
-* Search
+* ~~Integrate the Design~~ - Finished
+* ~~Search~~ - Finished
 * Filtering
 * Pagination
 * Forms and Authentication
