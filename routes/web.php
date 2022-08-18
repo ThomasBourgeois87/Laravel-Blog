@@ -18,7 +18,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('posts', [
-        'posts' => Post::latest()->with(['category', 'author'])->get()
+        'posts' => Post::latest()->with(['category', 'author'])->get(),
+        'categories' => Category::all()
     ]);
 })->name('homepage');
 
@@ -32,7 +33,9 @@ Route::get('post/{post:slug}', function (Post $post) {
 
 Route::get('categories/{category:slug}', function (Category $category) {
     return view('posts', [
-        'posts' => $category->posts->load(['category', 'author'])
+        'posts' => $category->posts->load(['category', 'author']),
+        'currentCategory' => $category,
+        'categories' => Category::all()
     ]);
 })->name('category_list');
 
