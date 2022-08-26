@@ -9,7 +9,7 @@ Devided into 11 sections :
 * ~~Working With Databases~~ - Finished
 * ~~Integrate the Design~~ - Finished
 * ~~Search~~ - Finished
-* Filtering
+* ~~Filtering~~ - Finished
 * Pagination
 * Forms and Authentication
 * Comments
