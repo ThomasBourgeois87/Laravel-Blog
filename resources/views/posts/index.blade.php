@@ -7,6 +7,8 @@
 
             @if( $posts->count() > 1 )
                 <x-posts-grid :posts="$posts"></x-posts-grid>
+
+                {{ $posts->links() }}
             @endif
         </main>
 
