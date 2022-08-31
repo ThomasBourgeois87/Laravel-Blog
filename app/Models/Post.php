@@ -9,8 +9,6 @@ class Post extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['title', 'user_id', 'category_id', 'slug', 'excerpt', 'body'];
-
     public function scopeFilter($query, array $filters) {
 
         $query->when( $filters['search'] ?? false, function ($query, $search) {
@@ -32,6 +30,12 @@ class Post extends Model
                 ->whereHas('author', fn ($query) =>
                 $query->where('username', $author));
         } );
+    }
+
+
+    public function comments() 
+    {
+        return $this->hasMany(Comment::class);
     }
 
 

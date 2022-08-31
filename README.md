@@ -12,6 +12,6 @@ Devided into 11 sections :
 * ~~Filtering~~ - Finished
 * ~~Pagination ~~ - Finished
 * ~~Forms and Authentication~~ - Finished
-* Comments
+* ~~Comments~~ - Finished
 * Newsletters and APIs
 * Admin Section
