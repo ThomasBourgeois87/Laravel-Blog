@@ -10,8 +10,8 @@ Devided into 11 sections :
 * ~~Integrate the Design~~ - Finished
 * ~~Search~~ - Finished
 * ~~Filtering~~ - Finished
-* ~~Pagination ~~ - Finished
+* ~~Pagination~~ - Finished
 * ~~Forms and Authentication~~ - Finished
 * ~~Comments~~ - Finished
-* Newsletters and APIs
+* ~~Newsletters and APIs~~ - Finished
 * Admin Section

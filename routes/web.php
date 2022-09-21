@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\PostCommentsController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\RegisterController;
@@ -9,6 +10,9 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', [PostController::class, 'index'])->name('homepage');
+
+
+Route::post('/newsletter', NewsletterController::class);
 
 
 Route::get('post/{post:slug}', [PostController::class, 'show'])->name('post');
