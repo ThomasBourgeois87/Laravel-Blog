@@ -22,18 +22,34 @@
         </div>
 
         <div class="mt-8 md:mt-0 flex items-center">
-            <div class="mr-6">
+            <div class="mr-6 flex items-center">
                 @auth
-                <span class="text-xs font-bold uppercase">Welcome {{ auth()->user()->name }}</span> 
+                <x-dropdown>
+                    <x-slot name="trigger">
+                        <button class="text-xs font-bold uppercase">Welcome {{ auth()->user()->name }}</button>
+                    </x-slot>
 
-                <form method="POST" action="/logout" class="text-xs font-semibold text-blue-500 ml-6">
-                    @csrf
+                    @admin
+                        <x-dropdown-item href="/admin/posts" :active="request()->is('admin/posts')">All posts</x-dropdown-item>
+                        <x-dropdown-item href="/admin/posts/create" :active="request()->is('admin/posts/create')">New post</x-dropdown-item>
+                    @endadmin
 
-                    <button type="submit">Log out</button>
-                </form>
+
+                    <x-dropdown-item
+                        href="#"
+                        x-data="{}"
+                        @click.prevent="document.querySelector('#logout-form').submit()"
+                    >Log out</x-dropdown-item>
+
+                    <form id="logout-form" method="POST" action="/logout" class="text-xs font-semibold text-blue-500 ml-6">
+                        @csrf
+                    </form>
+                </x-dropdown>
+
+
                 @else
-                    <a href="/register" class="text-xs font-bold uppercase">Register</a> 
-                    <a href="/login" class="text-xs font-bold uppercase ml-6">Login</a> 
+                    <a href="/register" class="text-xs font-bold uppercase">Register</a>
+                    <a href="/login" class="text-xs font-bold uppercase ml-6">Login</a>
                 @endauth
             </div>
 

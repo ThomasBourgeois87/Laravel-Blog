@@ -1,17 +1,12 @@
-# Laravel Laracast tutorial
-## Learning Laravel with building a simple blog
+# Laravel Blog
+Create a Laravel Blog
 
-Tutorial link: [Laracast](https://laracasts.com/series/laravel-8-from-scratch)
+## Turn on the project
+* Clone the repository
+* ``composer install``
+* ``npm install``
+* Copy .env.example to .env and set database ids
+* ``php artisan migrate:fresh --seed`` to set content inside database
+* To create an admin account : email : ``toto@toto.fr``, username : ``toto``, password: ``toto1234``
 
-Devided into 11 sections :
-* ~~The Basics~~ - Finished
-* ~~Blade~~ - Finished
-* ~~Working With Databases~~ - Finished
-* ~~Integrate the Design~~ - Finished
-* ~~Search~~ - Finished
-* ~~Filtering~~ - Finished
-* ~~Pagination~~ - Finished
-* ~~Forms and Authentication~~ - Finished
-* ~~Comments~~ - Finished
-* ~~Newsletters and APIs~~ - Finished
-* Admin Section
+To use newsletter functionality, set inside .env Mailchimp API key and Mailchimp subscriber list
